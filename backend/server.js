@@ -6,8 +6,8 @@ const fetch = require("node-fetch");
 const app = express();
 const PORT = 3000;
 
-const GEMINI_API_KEY = "AIzaSyC8SQ_SsM4erpOj_e4mdJ-SJJJIJMbFEo0";
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+const GEMINI_API_KEY = "enter your key here";
+const GEMINI_API_URL = "enter your URL here";
 
 app.use(cors());
 app.use(bodyParser.json());
