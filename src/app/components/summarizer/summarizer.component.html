@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Content Summarizer</h1>
+  <textarea [(ngModel)]="content" placeholder="Paste your content here"></textarea>
+  <button (click)="summarize()" [disabled]="loading">Summarize</button>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <div *ngIf="summary" class="summary" [innerText]="summary"></div>
+</div>
+
+
+
+
